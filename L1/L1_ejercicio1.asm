@@ -4,12 +4,12 @@
 
 .text
 
-addi x3, x0, 3
-addi x4, x0, 4
-addi x5, x0, 5
-addi x6, x0, 6
-addi x7, x0, 7
-addi x8, x0, 8
+addi x3, x0, 3 #-- x3 = x0 + 3
+addi x4, x0, 4 #-- x4 = x0 + 4
+addi x5, x0, 5 #-- x5 = x0 + 5
+addi x6, x0, 6 #-- x6 = x0 + 6
+addi x7, x0, 7 #-- x7 = x0 + 7
+addi x8, x0, 8 #-- x8 = x0 + 8
 
 #-- Para terminar
 li a7,10

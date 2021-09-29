@@ -24,11 +24,12 @@ bucle:
 
 	sub x9,x8,x7 #-- x9 = x8-x7
 
-	addi x9,x9,15 #-- x9 = x9+15 porque así funcion y addi x10,x10,15 y al final llamando a x10 en lugar de x9 no
+	addi x10,x9,15 #-- x10 = x9+15 
 
 	add x11,x6,x5 #-- x11=x6+x5
 
-	sub x4,x9,x11
+	sub x4,x10,x11 #--x4 = x10 + x11
+
 	
 
 #-- Incrementar x5,x6,x7 y x8

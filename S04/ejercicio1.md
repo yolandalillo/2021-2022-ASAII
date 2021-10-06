@@ -11,7 +11,6 @@ c) En la posición de memoria 921 se encuentra la variable var1, que tiene el va
 El código de operación de la instrucción de suma es el 11100 en binario, que suma al regisgtro acumulador 
 el contenido de la variable de memoria indicada: A = A + variable, donde A es el acumulador del EDSAC. 
 Escribe la instrucción en código máquina que hace la operación: A = A + var1
-![ejercicio1](https://user-images.githubusercontent.com/43533573/136210867-74f95540-b61b-4bc4-b306-6afc96f86df6.png)
 *La instrucción será:
 opcode          11100
 R               0

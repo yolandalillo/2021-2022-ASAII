@@ -16,17 +16,24 @@ a) Escribe el programa en ensamblador del computador A que realiza esta operaci√
 #-- f = (a + b) - c + d
 
 #-- Variable de memoria a registros
+
 load x1, a
+
 load x2, b
+
 load x3, c
+
 load x4,d
 
 #-- Realizar las operaciones 
 add x5, x1, x2  #-- x5 = (a + b)
+
 sub x5, x5, x3  #-- x5 = (a + b) - c
+
 add x5, x5, x4  #-- x5 = (a + b) - c + d
 
 #-- Almacenar el resultado en f
+
 store x5, f*
 
 b) Calcula el tr√°fico total (en bytes) entre el procesador y la memoria cuando se ejecuta este programa

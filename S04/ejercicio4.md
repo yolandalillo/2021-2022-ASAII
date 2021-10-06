@@ -12,9 +12,10 @@ dejando el resultado en la variable de memoria f
 
 a) Escribe el programa en ensamblador del computador A que realiza esta operación
 
-*#-- f = (a + b) - c + d
+*
+# -- f = (a + b) - c + d
 
-#-- Variable de memoria a registros
+# -- Variable de memoria a registros
 load x1, a
 load x2, b
 load x3, c

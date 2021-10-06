@@ -1,6 +1,8 @@
 Ejercicio 2
+
 El formato de las instrucciones del Computador de guiado del Apolo XI (1969), la nave que nos llevó a la Luna, es el siguiente:
 ![Image text](https://github.com/yolandalillo/2021-2022-ASAII/blob/main/S04/images/ejercicio2.PNG)
+
 En cada posición de memoria se almacena un dato de 16 bits (medias palabras). Así, en la dirección 0 está el primer dato de 16 
 bits, en la direción 1 el segundo, etc... La unidad mínima de intercambio con la memoria son 16 bits
 

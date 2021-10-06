@@ -29,6 +29,6 @@ store x1, f
 
 b) Calcula el tráfico total (en bytes) entre el procesador y la memoria cuando se ejecuta este programa
 
-*Todas las instrucciones ocupan 5 bytes (40 bits), y todas realizan acceso a memoria, por lo que su tráfico de datos es de 4 bytes
+*Todas las instrucciones ocupan 5 bytes (40 bits), y todas realizan acceso a memoria, por lo que su tráfico de datos es de 4 bytes.
 El tráfico total de las instrucciones es de 5 * 5 = 25 bytes. El trafíco debido a los datos es de 5 * 4 = 20 bytes. 
 El tráfico total es de 25 + 25 = 45 bytes*

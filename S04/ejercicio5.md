@@ -14,12 +14,17 @@ Suponed que los registros del computador B están inicialmente a 0
 a) Escribe el programa en ensamblador del computador B que realiza esta operación
 
 #-- Realizar las operaciones
+
 add x1, a  #-- x1 = 0 + a
+
 add x1, b  #-- x1 = (a + b)
+
 sub x1, c  #-- x1 = (a + b) - c
+
 add x1, d  #-- x1 = (a + b) - c + d
 
 #-- Almacenar el resultado en memoria
+
 store x1, f
 
 b) Calcula el tráfico total (en bytes) entre el procesador y la memoria cuando se ejecuta este programa

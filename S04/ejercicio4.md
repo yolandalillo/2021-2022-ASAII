@@ -12,7 +12,6 @@ dejando el resultado en la variable de memoria f
 
 a) Escribe el programa en ensamblador del computador A que realiza esta operación
 
-*
 #-- f = (a + b) - c + d
 
 #-- Variable de memoria a registros
@@ -34,7 +33,7 @@ add x5, x5, x4  #-- x5 = (a + b) - c + d
 
 #-- Almacenar el resultado en f
 
-store x5, f*
+store x5, f
 
 b) Calcula el tráfico total (en bytes) entre el procesador y la memoria cuando se ejecuta este programa
 

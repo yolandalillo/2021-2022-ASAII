@@ -1,4 +1,4 @@
-![Image text](https://github.com/yolandalillo/2021-2022-ASAII/blob/main/S04/ejercicio1.png)
+![Image text](https://github.com/yolandalillo/2021-2022-ASAII/blob/main/S04/images/ejercicio1.png)
 
 a) ¿Cuantas instrucciones como máximo se pueden tener en esta arquitectura?
 *El campo opcodes es de 5 bits. Esto significa que hay un total de 2^5 = 32 posibles valores. Es decir, 32 instrucciones como máximo*

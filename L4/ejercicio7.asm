@@ -31,13 +31,13 @@ tabla:	.word DIG1, DIG2, DIG3, DIG4
 	lw x10, E1(x5)
 	sw x10, 0(x6)
 
-	lw x11, E2(x5)
+	lw x10, E2(x5)
 	sw x10, 0(x6)
 
-	lw x12, E3(x5)
+	lw x10, E3(x5)
 	sw x10, 0(x6)
 	
-	lw x13, E4(x5)
+	lw x10, E4(x5)
 	sw x10, 0(x6)
 	
 	#-- Terminar

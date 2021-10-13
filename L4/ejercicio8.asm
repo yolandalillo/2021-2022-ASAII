@@ -24,12 +24,14 @@
 	.eqv DIG7 0x07  #-- Digito 7
 	.eqv DIG8 0x7F  #-- Digito 8
 	.eqv DIG9 0x6F  #-- Digito 9
+	.eqv DIG0 0x3F  #-- Digito 0
+
 	
 	.eqv DISPLAY 0xFFFF0010
 	
 	.data
 	
-tabla:	.word DIG1, DIG2, DIG3, DIG4, DIG5, DIG6, DIG7, DIG8, DIG9
+tabla:	.word DIG1, DIG2, DIG3, DIG4, DIG5, DIG6, DIG7, DIG8, DIG9, DIG0
 	
 	.text
 	

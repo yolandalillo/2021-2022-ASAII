@@ -5,7 +5,7 @@
 
 #-- Códigos 
 	.eqv EXIT 10
-	.eqv PRINT_INT 10
+	.eqv PRINT_INT 1
 	.eqv READ_INT 5
 	
 	.text

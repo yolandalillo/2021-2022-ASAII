@@ -23,4 +23,4 @@ c) Calcula frecuencia máxima de funcionamiento de este nuevo circuito
 
 **Por otro lado tenemos el camino anterior, que tiene un retardo de 10ns. Nos quedamos con el mayor de ambos: 15ns. Es la manera de garantizar que ambos registros leen valores estables. Por tanto, ahora, la máxima frecuencia de funcionamiento es de 1 / 15ns = 66.7 Mhz**
 
-**PPEGUNTAR -> ¿Y qué pasa con los 3 ns del final?
+**PPEGUNTAR -> ¿Y qué pasa con los 3 ns del final?**

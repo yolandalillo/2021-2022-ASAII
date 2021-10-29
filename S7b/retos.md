@@ -35,27 +35,30 @@ addi x5,x0,0xC0
 ¿Y qué instrucción en ensamblador es esta otra 0x00128313?
 
 ```
-  1     3
- 0001 0011
+Pasamos todo a binario
 
-Mi opcode es 0010011, miramos en la tabla y corresponde a la instrucción addi
+0000 0000 0001 0010 1000 0011 0001 0011
 
-Los siguientes 5 bits es el reguistro destino, por tanto seguimos decodificando
+Reagrupamos los bits fijándote en los 7 de menor peso (los 7 de la derecha) para sabe el opcode
 
- 3
-0011
 
-Por tanto, el registro es 00110, que corresponde a x6 porque cogemos el uno que nos quedaba de arriba sin coger
+0000 0000 0001 0010 1000 0011 0 0010011
 
-  1   2    8
-0001 0010 1000 
+Sabemos que es una instrucción addi.
 
-Los tres siguientes son func3 #-- PREGUNTAR -> es x11 o se coge el valor 128 o que de qué
+000000000001 (12-bits: Campo Valor) - 00101 (5 bits. Campo rs1) - 000 (3. bits. Campo func3) 00110 (5 bits. Campo rd) 0010011 - (7 bits. Campo opcode)
 
-El valor es 00 
+La instrucción la reagrupamos así:
 
-Finalmente la solución que nos pedía es: 
+000000000001  00101  000  00110  0010011
 
+y de aquí sacamos que: Valor = 000000000001 (1 en decimal),  rs1 = 00101 (5 en decimal),  func3 = 000,  rd=00110 (6 en decimal) y opcode = 0010011 (ya lo conocíamos de antes)
+
+Valor = 1, rs1 = x5, rd = x6, opcode=addi
+
+Ahora lo ponemos en ensamblador:  addi x6, x5, 1
+
+NOTA: Si el campo func3 no hubiese sido 000, entonces NO es la instrucción addi,sería otra. Sabemos que es una addi porque el opcode es 0010011 y el campo func3 es 000
 
 ```
 

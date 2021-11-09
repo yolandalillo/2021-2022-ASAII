@@ -15,7 +15,11 @@ el contenido de la variable de memoria indicada: A = A + variable, donde A es el
 Escribe la instrucción en código máquina que hace la operación: A = A + var1
 
 *La instrucción será:
+
 opcode          11100
+
 R               0
+
 dirección dato 1110011001
+
 T               0(17bits tamaño pequeño)*

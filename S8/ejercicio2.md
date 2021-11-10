@@ -49,11 +49,11 @@ a) Calcular el retardo de cada una de las fases: Fetch, decodificación, ejecuci
 
 **Estos valores llegan al banco de registros, cuya lectura es combinacional y tiene un retardo dado de 200ps. Por tanto, el retardo en la decodificación es de 200ps. Como se trata de la instrucción addi, el valor de la señal de control AluSrc es 1**
 
-**Ejecución: Es la fase que se lleva a cabo en la ALU. Le llega el operando x0 y el valor inmediato 20. La operación a realizar es la suma. Por tanto, al cabo de 120ps se tiene el resultado. Retardo de la fase de ejecución: 120ps. Como no nos dan los retardos de los multiplexores, asumiremos que son despreciables y les damos un valor de 0
+**Ejecución: Es la fase que se lleva a cabo en la ALU. Le llega el operando x0 y el valor inmediato 20. La operación a realizar es la suma. Por tanto, al cabo de 120ps se tiene el resultado. Retardo de la fase de ejecución: 120ps. Como no nos dan los retardos de los multiplexores, asumiremos que son despreciables y les damos un valor de 0**
 
-**Lectura de memoria: La instrucción addi NO accede a memoria por lo que el retardo de esta fase es 0, desde que ponemos valor a la memoria de datos hasta que obtenemos el dato, la única que lee de memoria es LOAD.
+**Lectura de memoria: La instrucción addi NO accede a memoria por lo que el retardo de esta fase es 0, desde que ponemos valor a la memoria de datos hasta que obtenemos el dato, la única que lee de memoria es LOAD.**
 
-**Escritura de estado: El resultado de la ALU llega a la entrada data del banco de registros. La señal RegWrite es 1 (se obtiene de la tabla de control). Esta fase se realiza cuando llega un flanco de reloj, por lo que forma parte del siguiente ciclo (la escritura se hace en paralelo con la lectura de la siguiente instrucción). El retardo de esta fase es 0 (0ps después de terminar el ciclo de ejecución los datos ya están estables y listos para su escritura. No hay que hacer cálculos adicionales)
+**Escritura de estado: El resultado de la ALU llega a la entrada data del banco de registros. La señal RegWrite es 1 (se obtiene de la tabla de control). Esta fase se realiza cuando llega un flanco de reloj, por lo que forma parte del siguiente ciclo (la escritura se hace en paralelo con la lectura de la siguiente instrucción). El retardo de esta fase es 0 (0ps después de terminar el ciclo de ejecución los datos ya están estables y listos para su escritura. No hay que hacer cálculos adicionales)**
 
 b) Calcular el retardo total de la instrucción
 

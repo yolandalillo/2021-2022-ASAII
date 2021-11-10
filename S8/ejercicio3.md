@@ -18,4 +18,30 @@ a) add x5, x5, x6
 
 b) sub x7, x7, x8
 
+**Retardo Fetch: 400ps, este retardo está dado SIEMPRE por el retardo de la memoria, y será el mismo para TODAS las instrucciones**
+
+**Retardo de decodificación: 200ps**
+
+**Retardo de ejecución: 120ps**
+
+**Retardo de lectura de memoria: 0**
+
+**Retardo de escritura: 0**
+
+**Retardo total: 400ps + 200ps + 120ps = 720ps**
+
+
 c) and x9, x10, x11
+
+**Retardo Fetch: 400ps, este retardo está dado SIEMPRE por el retardo de la memoria, y será el mismo para TODAS las instrucciones**
+
+**Retardo de decodificación: 200ps**
+
+**Retardo de ejecución: 120ps**
+
+**Retardo de lectura de memoria: 0**
+
+**Retardo de escritura: 0**
+
+**Retardo total: 400ps + 200ps + 120ps = 720ps**
+

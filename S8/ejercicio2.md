@@ -37,10 +37,15 @@ a) Calcular el retardo de cada una de las fases: Fetch, decodificación, ejecuci
 **Fetch: Es la fase de captura de la instrucción, el ciclo en el que obtenemos la instrucción. Desde que arrancamos ciclo hasta que obtenemos instrucción. La dirección sale del registro PC y llega a la memoria de instrucciones, que tiene un retardo de 400ps. Al cabo de ese tiempo ya está la instrucción lista. Retardo de fetch: 400ps**
 
 **Decodificación: En esta fase se obtienen los valores de los registros operandos usados. La intrucción que llega de la memoria por el pin inst se descompone en sus diferentes campos. Desde que tenemos la instrucción a valores estables en las tres entradas de la ALU. Como el retardo del componente de formato NO lo tenemos, supondremos que es despreciable y asumiremos un valor de 0. La instrucción tiene estos tres operandos:
-  * Unidad de control: Sale lo que dice la tabla de la unidad de control, estamos usando la instrucción addi nos pondrá 100100
-  *  *  Registro destino (rd): 5
-  * Regisgtro fuente 1 (rs1): 0
-  * Valor inmediato: 20
+  * (explicar esto mejor) Unidad de control: Sale lo que dice la tabla de la unidad de control, estamos usando la instrucción addi nos pondrá 100100
+     *  AluSrc: 1 
+     * MemtoReg: 0
+     * Brach: 0
+     * RegWrite: 1
+     * MemWrite: 0
+     * ALU: 0
+
+**Analizando el caso peor, el tiempo decodificación es 200ps**
 
 **Estos valores llegan al banco de registros, cuya lectura es combinacional y tiene un retardo dado de 200ps. Por tanto, el retardo en la decodificación es de 200ps. Como se trata de la instrucción addi, el valor de la señal de control AluSrc es 1**
 
@@ -52,11 +57,7 @@ a) Calcular el retardo de cada una de las fases: Fetch, decodificación, ejecuci
 
 b) Calcular el retardo total de la instrucción
 
-**El valor siguiente del PC se ha obtenido previamente, tras 100ps + 400ps desde la llegada del flanco del reloj. Se ha hecho en paralelo con la etapa de la decodificación. El camino crítico está en el estado de los registros, que en la instrucción addi se actualiza al final. Por tanto, para el cálculo del retardo tenemos en cuenta este camino peor. Sumando los retardos de todas las etapas tenemos el retardo de esta instrucción:**
-
 **Retardo instrucción addi: Retardo Fech + Retardo Decodificación + Retardo Ejecución + Retardo write = 400ps + 200ps + 120ps = 720ps
 
 **Esto significa que, trasncurridos 720ps desde la llegada del último flanco de subida, los valores que se tienen dentro del procesador son estables. Y por tanto se pueden capturar con seguridad.**
-
-**El valor estable del PC se obtiene transcurridos 400ps + 100ps = 500ps. El tiempo que se toma es el peor: 720ps**
 

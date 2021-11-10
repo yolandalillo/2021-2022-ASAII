@@ -4,10 +4,10 @@ En la memoria de instrucciones de un NanoRisc-v monociclo se tiene el siguiente 
 
 | Direccion |  Instrucción |
 | -- | -- | 
- 0x100  addi x5, x0, 20 
-0x104 	add x5, x5, x6
-0x108 	beq x5, x7, 4
-0x10C 	beq x0, x0, 0
+| 0x100 | addi x5, x0, 20 |
+|0x104 |	add x5, x5, x6|
+|0x108| 	beq x5, x7, 4|
+|0x10C |	beq x0, x0, 0|
 .... 	...
 
 Tras la ejecución de una instrucción, el estado del procesador es:

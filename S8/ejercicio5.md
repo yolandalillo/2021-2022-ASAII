@@ -4,7 +4,7 @@ Repetir el ejercicio 2, con los mismos datos, pero para las instrucciones:
 
 a) sd x1, 0x100(x2)
 
-**Retardo Fetch: 400ps, este retardo está dado SIEMPRE por el retardo de la memoria, y será el mismo para TODAS las instrucciones**
+* **Retardo Fetch: 400ps, este retardo está dado SIEMPRE por el retardo de la memoria, y será el mismo para TODAS las instrucciones**
 
 **Retardo de decodificación: 200ps**
 

@@ -21,7 +21,7 @@ Se pide:
 
  a) Calcula el estado del procesador al llegar el siguiente franco de subida del reloj
  
- **En el estado actual, al comenzar a ejecutar la nueva instrucción, tenemos que el PC vale 0x104. La instrucción que se va a cargar es por tanto la de la dirección 0x104, que según vemos en la memoria es: *add x5, x5, x6*. Como el registro x5 vale 20 y el registro x6 1, el valor que tendrá x5 en el siguiente ciclo será 21. Durante este ciclo se calcula el siguiente estado, que será PC = 0x108 y x5 = 21. Al llegar el flanco de subida del reloj, ese será el nuevo estado**
+ **En el estado actual, al comenzar a ejecutar la nueva instrucción, tenemos que el PC vale 0x104. La instrucción que se va a cargar es por tanto la de la dirección 0x104, que según vemos en la memoria es: *add x5, x5, x6*. Como el registro x5 vale 20 y el registro x6 1, el valor que tendrá x5 en el siguiente ciclo será 21. Durante este ciclo se calcula el siguiente estado, que será PC = 0x108, x5 = 21, x6 sigue valiendo 1. Al llegar el flanco de subida del reloj, ese será el nuevo estado**
  
  b) Calcula el estado del procesador al llegar otro flanco de subida de reloj tras el del apartado a
  
@@ -30,3 +30,5 @@ Se pide:
  c) Calcula el estado del procesador al llegar otro flanco de subida de reloj tras el del apartado b
  
  **El valor del PC es ahora de 0x10C, por lo que se ejecuta la instrucción beq x0,x0,0. Esta instrucción se cumple siempre, por lo que se asigna al PC el valor de PC+0. Es decir, que cuando llegue el siguiente flanco de subida el PC se queda con el mismo valor, y también los registros. Por tanto, ya no hay cambio de estado. El procesador permanece sin cambios hasta que se haga un reset**
+ 
+*Adjuntar dibujo con explicación copiada en clase*

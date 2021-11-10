@@ -36,7 +36,8 @@ a) Calcular el retardo de cada una de las fases: Fetch, decodificación, ejecuci
 
 **Fetch: Es la fase de captura de la instrucción, el ciclo en el que obtenemos la instrucción. Desde que arrancamos ciclo hasta que obtenemos instrucción. La dirección sale del registro PC y llega a la memoria de instrucciones, que tiene un retardo de 400ps. Al cabo de ese tiempo ya está la instrucción lista. Retardo de fetch: 400ps**
 
-**Decodificación: En esta fase se obtienen los valores de los registros operandos usados. La intrucción que llega de la memoria por el pin inst se descompone en sus diferentes campos. Desde que tenemos la instrucción a valores estables en las tres entradas de la ALU. Como el retardo del componente de formato NO lo tenemos, supondremos que es despreciable y asumiremos un valor de 0. La instrucción tiene estos tres operandos:
+**Decodificación: En esta fase se obtienen los valores de los registros operandos usados. La intrucción que llega de la memoria por el pin inst se descompone en sus diferentes campos. Desde que tenemos la instrucción a valores estables en las tres entradas de la ALU. Como el retardo del componente de formato NO lo tenemos, supondremos que es despreciable y asumiremos un valor de 0. La instrucción tiene estos tres operandos:**
+
   * (explicar esto mejor) Unidad de control: Sale lo que dice la tabla de la unidad de control, estamos usando la instrucción addi nos pondrá 100100
      *  AluSrc: 1 
      * MemtoReg: 0

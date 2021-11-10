@@ -24,21 +24,21 @@ Los retardos introducidos por los componentes de la ruta de datos del procesador
 
 |Componente| 	Retardo|
 |--|--|
-Memoria de instrucciones 	400ps
-Sumador 	100ps
-ALU 	120ps
-Memoria de datos 	350ps
-Banco de registros 	200ps
+|Memoria de instrucciones |	400ps|
+|Sumador 	|100ps|
+|ALU |	120ps|
+|Memoria de datos |	350ps|
+|Banco de registros |	200ps|
 
 Se pide
 
 a) Calcular el retardo de cada una de las fases: Fetch, decodificación, ejecución, lectura de memoria y escritura de resultados (write-back)
 
-* Fetch: Es la fase de captura de la instrucción. La dirección sale del registro PC y llega a la memoria de instrucciones, que tiene un retardo de 400ps. Al cabo de ese tiempo ya está la instrucción lista. Retardo de fetch: 400ps
+**Fetch: Es la fase de captura de la instrucción. La dirección sale del registro PC y llega a la memoria de instrucciones, que tiene un retardo de 400ps. Al cabo de ese tiempo ya está la instrucción lista. Retardo de fetch: 400ps**
 
-* Decodificación: En esta fase se obtienen los valores de los registros operandos usados. La intrucción que llega de la memoria por el pin inst se descompone en sus diferentes campos. Como el retardo del componente de formato NO lo tenemos, supondremos que es despreciable y asumiremos un valor de 0. La instrucción tiene estos tres operandos:
+**Decodificación: En esta fase se obtienen los valores de los registros operandos usados. La intrucción que llega de la memoria por el pin inst se descompone en sus diferentes campos. Como el retardo del componente de formato NO lo tenemos, supondremos que es despreciable y asumiremos un valor de 0. La instrucción tiene estos tres operandos:
 
-  * Registro destino (rd): 5
+  * **Registro destino (rd): 5
   * Regisgtro fuente 1 (rs1): 0
   * Valor inmediato: 20
 

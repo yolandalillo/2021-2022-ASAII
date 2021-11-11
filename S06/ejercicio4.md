@@ -20,7 +20,7 @@ c) Si inicialmente el registro tiene el valor 0, ¿Cuantos ciclos de reloj trans
 
 d) Si el registro tiene el valor 3 y llega un flanco de reloj, ¿Cual es el nuevo valor del registro?
 
-**CREO QUE LO ENTIENDO PERO PREGUNTAR PARA ASEGURAR --> En el siguiente ciclo de reloj, el registro pasará a valor 0, ya que los números que estamos usando son de 2 bits**
+**DUDA PREGUNTADA EN CLASE--> En el siguiente ciclo de reloj, el registro pasará a valor 0, ya que los números que estamos usando son de 2 bits**
 
 e) ¿Cuanto tiempo transcurre desde que vale 0, llega el primer ciclo de reloj y vuelve otra vez a cero?
 

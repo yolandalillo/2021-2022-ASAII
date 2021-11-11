@@ -14,7 +14,7 @@ b) Calcula su frecuencia máxima de funcionamiento
 
 c) Inicialmente el registro contiene el valor 0 y la señal cnt está a 0. Durante el tercer ciclo de reloj la señal cnt se pone 1, y se vuelve a poner a 0 en el cuarto ciclo, permaneciendo así indefinidamente. ¿Cuál será el valor del registro en el sexto ciclo de reloj?
 
-**PREGUNTAR OBIJUAN --> En los ciclos 1, 2 y 3 como cnt está a 0, el contador permanece a 0. Durante la mitad del tercer ciclo cnt se pone a 1, por lo que al llegar el flanco de subida del cuarto ciclo el contador se incrementa en 1 unidad, pasando de 0 a 1. Como en el ciclo 4 la señal cnt se pone a 0, el contador permanecerá a 1 el resto de ciclos**
+**PREGUNTADO --> En los ciclos 1, 2 y 3 como cnt está a 0, el contador permanece a 0. Durante la mitad del tercer ciclo cnt se pone a 1, por lo que al llegar el flanco de subida del cuarto ciclo el contador se incrementa en 1 unidad, pasando de 0 a 1. Como en el ciclo 4 la señal cnt se pone a 0, el contador permanecerá a 1 el resto de ciclos**
 
 d) Si la señal cnt está a 0 durante 3 ciclos de reloj, en el siguiente se pone 1, en los siguientes 3 a 0, luego otra vez a 1 y así sucesivamente... ¿A qué frecuencia funciona este contador?
 

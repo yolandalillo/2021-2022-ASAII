@@ -7,6 +7,7 @@ Sabiendo que la instrucción addi en el RISC-V tiene el siguiente formato:
 a) Obtén el código máquina (en hexadecimal) del siguiente programa:
 
 **addi x0, x0, 0**
+
 valor: 000000000000
 
 rs1:00000

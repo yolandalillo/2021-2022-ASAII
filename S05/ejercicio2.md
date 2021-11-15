@@ -4,18 +4,39 @@ El computador B es igual que el computador A del ejercicio 1, pero su ordenació
 mismo que el del ejercicio 1, inidicar el valor (en hexadecimal) del dato que se almacena en el registro x1 al ejecutar las mismas 
 instrucciones de los apartados a-g del ejercicio 1.
 
-**a) Como los bytes son unidades atómicas, el ordenamiento no les afecta por lo que: x1 = 0x1D
+* a) load_byte x1, 0x10010003
 
-**b) x1 = 0xCA
+**x1= 0x1D**
 
-**c) Se construye a partir de los 2 bytes situados en 0x10010003 y 0x10010004. El primero es el de mayor peso y el segundo el de menor: x1 = 0x1D00
+* b) load_byte x1, 0x10010005
 
-**d) x1 = 0xCABA
+**x1= 0xCA**
 
-**e) Se construye a partir de los 4 bytes situados en las direcciones 0x10010002, 0x10010003, 0x10010004 y 0x10010005
-x1=0x2C1D00CA
 
-**f) x1 = 0xCABAFEDE
+* c) load_half x1, 0x10010003
 
-**g) Se construye a partir de los 8 bytes situados desde la dirección 0x10010001 en adelante
-x1 = 0x3B2C1D00CABAFEDE
+**x1= 0x1D00**
+
+
+* d) load_half x1, 0x10010005
+
+**x1= 0xCABA**
+
+
+* e) load_word x1, 0x10010002
+
+**x1= 0x2C1D00DA**
+
+
+* f) load_word x1, 0x10010005
+
+**x1= 0xCABAFEDE**
+
+
+* g) load_dword x1, 0x10010001
+
+**x1= 0x3B2C1D00CABAFEDE**
+
+
+
+

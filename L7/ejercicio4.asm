@@ -1,6 +1,6 @@
 #-- EJERCICIO4
-#-- Escribe un programa que pida al usuario que introduzca un número entero (n), se impriman en pantalla 
-#-- los números de 1 hasta n, separados por una el carácter ','y termine. En esta animación se muestra un 
+#-- Escribe un programa que pida al usuario que introduzca un nÃºmero entero (n), se impriman en pantalla 
+#-- los nÃºmeros de 1 hasta n, separados por una el carÃ¡cter ','y termine. En esta animaciÃ³n se muestra un 
 #-- ejemplo de funcionamiento del programa. Se ejecuta dos veces. En la primera se introduce n=5, y e la segunda n=10:
 
 	.include "servicios.asm"
@@ -11,24 +11,30 @@ msg_num: .string "Introduce un numero (n): "
 	
 	.text
 	
-	#------ Pedir numero n al usuario
+	#-- PEdir al usuario un entero
+	#-- Imprimir la cadena
 	la a0, msg_num
 	li a7, PRINT_STRING
 	ecall
 	
+	#-- Pedir el entero
 	li a7, READ_INT
 	ecall
 	
 	#-- a0 contiene n. Lo guardamos en t1
+	#-- t1 = n
 	mv t1, a0
 	
-	#-- t0 es el contador
+#-- IMPRIMIR DESDE 1 HASTA n
+	
+	#-- t0 es el contador inicializado a cero
 	li t0, 0
 	
 	#--- Bucle
 bucle:
 
 	#-- Si t0 == n, terminar
+	#-- ComparaciÃ³n Â¿t1=n?Â¿Hemos llegado al tope?
 	beq t0, t1, fin_bucle
 
 	#-- Incrementar contador

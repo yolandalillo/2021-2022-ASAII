@@ -1,4 +1,4 @@
-Ejercicio 3 (PREGUNTAR)
+Ejercicio 3 (DUDA RESUELTA HACER SIGUIENTE APARTADO)
 
 Sabiendo que la instrucción addi en el RISC-V tiene el siguiente formato:
 

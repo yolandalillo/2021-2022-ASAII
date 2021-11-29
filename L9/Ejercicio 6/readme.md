@@ -1,1 +1,1 @@
-
+Usando la función count del ejercicio 5 (en su propio fichero) y la función len del ejecicio 4 (también en su propio fichero), crear un programa principal (en otro fichero) que pida al usuario una cadena, imprima su longitud, y luego imprima el número de veces que aparece el carácter 'a' y 'e'

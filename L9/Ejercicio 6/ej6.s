@@ -16,7 +16,7 @@ msg4:   .string "\nLongitud total: "
 cad: .space MAX #-- Cadena introducida por el usuario
 
 	.text
-	#-----------------------------------
+	
 	#-- Imprimir mensaje 1
 	la a0, msg1
 	li a7, PRINT_STRING
@@ -85,6 +85,7 @@ cad: .space MAX #-- Cadena introducida por el usuario
 	#-- Imprimir la cantidad
 	mv a0, t0
 	li a7, PRINT_INT
+	ecall #-- Por esto no salían las 'e' que habia
 	
 	#-- Terminar
 	li a7, EXIT

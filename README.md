@@ -1,6 +1,4 @@
-Apuntes asignatura de arquitectura de sistemas audiovisuales II (ASA II)
-
- Curso 2021-2022
+Apuntes asignatura de arquitectura de sistemas audiovisuales II (ASA II). Curso 2021-2022
 
 Wikis importantes
  * [Wiki Obijuan laboratorio](https://github.com/myTeachingURJC/2019-20-LAB-AO/wiki)

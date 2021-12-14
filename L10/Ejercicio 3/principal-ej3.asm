@@ -1,5 +1,5 @@
 #-- Programa principal
-#-- NO hay cambios con respecto al enunciado
+#-- No hay cambios con respecto al enunciado
 
 	.include "servicios.asm"
 	

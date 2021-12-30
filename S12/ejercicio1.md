@@ -19,7 +19,7 @@ Como sólo hay una instrucción, el tiempo que se tarda es igual al perido del r
 
 b) Calcular el tiempo que tarda el computador B en ejecutar el programa de pruebas
 
-** El computador B es un RISC-V segmentando, de 5 etapas. Cada etapa se ejecuta en un tiempo igual a 1/b. 
+**El computador B es un RISC-V segmentando, de 5 etapas. Cada etapa se ejecuta en un tiempo igual a 1/b. 
 La instrucción se completa transcurridos 5 ciclos de reloj, por lo que el tiempo que se tarda es: Tb = 5 * 1 / Fb = 5 / 3Ghz = 1.7ns (aprox)**
 
 c) Calcular el rendimiento relativo. Usando sólo ese programa de pruebas, ¿Qué computador ofrece mejor rendimiento?

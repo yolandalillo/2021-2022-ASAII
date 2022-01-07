@@ -73,7 +73,7 @@ los tiempos de CPU serían exactamente los mismos o habría cambios (0.5)
 
 **Tanto el lenguaje empleado como el compilador determinarán qué tipo de instrucciones se usan y cuántas hay en el programa de prueba. Al utilizar otro lenguaje y otro 
 compilador, el número de instrucciones usado de cada tipo variará y por tanto los tiempos de cpu también variarán (Por ejemplo, el compilador podría generar más 
-instrucciones de tipo D que tipo A)
+instrucciones de tipo D que tipo A)**
 
 *COMENTARIOS: Es precisamente por esto, que al evaluar el rendimiento de un computador, no sólo es importante la frecuencia a la que funcione, sino que 
 hay más factores a tener en cuenta: el lenguaje empleado, el compilador, el programa de prueba... Esto es importante para que, como ingenieros, 

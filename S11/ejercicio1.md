@@ -19,7 +19,7 @@ a) Calcular la frecuencia máxima de funcionamiento si este procesador tiene una
 
 b) Calcular la frecuencia máxima de funcionamiento si se utiliza una implementación segmentada
 
-**Elegimos el peor por tanto 1/400 = 2.5 GHz **
+**Elegimos el peor por tanto 1/400 = 2.5 GHz**
 
 c) Se tiene un programa de prueba que ejecuta 1000 instrucciones y termina. Calcular el CPI del procesador segmentando
 

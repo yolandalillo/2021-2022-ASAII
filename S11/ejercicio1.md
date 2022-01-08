@@ -2,15 +2,12 @@ Ejercicio 1
 
 Se tiene un procesador NanoRisc-V implentado con los siguientes componentes:
 
-Componente	                            Retardo (ps)
-
-Memoria de codigo (Lectura)	                220
-
-Banco registros (Lectura)	                  100
-
-ALU	                                         80
-
-Memoria de datos (Lectura)	                400
+|Componente	   |                         Retardo (ps)|
+|-|-|
+|Memoria de codigo (Lectura)	   |             220|
+|Banco registros (Lectura)	    |              100|
+|ALU|	                                         80|
+|Memoria de datos (Lectura)	               | 400|
 
 Tanto la escritura en el Banco de registros como en la memoria de datos las consideraremos muy rápidas por los que sus retardos serán despreciables (= 0 ps)
 

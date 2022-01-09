@@ -25,7 +25,8 @@ dst_cad:    .space MAX
 	#-- Pedimos cadena al usuario
 	la a0, src_cad
 	li a1, MAX
-	li a7, PRINT_STRING
+	li a7, READ_STRING #-- ES READ Y NO PRINT PORQUE ESTAMOS PIDIENDO CENTRATE YOLANDA
+	ecall #-- YOLANDA POR FAVOR NO OLVIDES MAS ECALL GRACIAS
 	
 	#-- Llamar a la subrutina procesar
 	la a0, src_cad
@@ -38,7 +39,7 @@ dst_cad:    .space MAX
 	ecall
 	
 	#-- Imprimir cadena procesada
-	la a1, dst_cad
+	la a0, dst_cad #-- CUIDADO ES A0 
 	li a7, PRINT_STRING
 	ecall
 	

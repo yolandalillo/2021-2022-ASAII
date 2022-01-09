@@ -45,6 +45,7 @@ dst_cad:    .space MAX
 	#-- Imprimir mensaje 3
 	la a0, msg3
 	li a7, PRINT_STRING
+	ecall #-- NO OLVIDAR
 	
 	#-- Imprimir cadena original
 	la a0, src_cad
@@ -54,8 +55,3 @@ dst_cad:    .space MAX
 	#-- Terminar
 	li a7, EXIT
 	ecall
-	
-	
-	
-	
-	
